@@ -26,10 +26,12 @@ app.use("/api/portfolio", portfolioRoutes);
 app.use("/api/market-data", marketDataRoutes);
 app.use("/api/recommendation", recommendationRoutes);
 
-// Menentukan port aplikasi akan berjalan (default 5000 atau yang didefinisikan di .env)
-const port = process.env.PORT || 5000;
+// // Menentukan port aplikasi akan berjalan (default 5000 atau yang didefinisikan di .env)
+// const port = process.env.PORT || 5000;
 
-// Menjalankan server dan mendengarkan pada port yang telah ditentukan
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`); // Menampilkan pesan bahwa server sudah berjalan
-});
+// // Menjalankan server dan mendengarkan pada port yang telah ditentukan
+// app.listen(port, () => {
+//   console.log(`Server running on port ${port}`); // Menampilkan pesan bahwa server sudah berjalan
+// });
+
+module.exports = app; // export app untuk deployment
